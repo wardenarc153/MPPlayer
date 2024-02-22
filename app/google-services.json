@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "815355515056",
+    "firebase_url": "https://mpplayer-19689-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "mpplayer-19689",
+    "storage_bucket": "mpplayer-19689.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815355515056:android:525d04d589e309c5df2b75",
+        "android_client_info": {
+          "package_name": "com.example.mpplayer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4yiUZ4VbpjWaytevbGOYJHOLtGkYbzBU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

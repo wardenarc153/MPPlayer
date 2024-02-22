@@ -1,8 +1,10 @@
-package com.example.mpplayer;
+package com.example.mpplayer.MainPages;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.mpplayer.R;
 
 public class MainActivity extends AppCompatActivity {
 

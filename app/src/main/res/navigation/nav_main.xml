@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/musicFragment">
+
+    <fragment
+        android:id="@+id/gitFragment"
+        android:name="com.example.mpplayer.MainPages.GitFragment"
+        android:label="fragment_git"
+        tools:layout="@layout/fragment_git" >
+        <action
+            android:id="@+id/action_gitFragment_to_instructionFragment"
+            app:destination="@id/instructionFragment" />
+        <action
+            android:id="@+id/action_gitFragment_to_musicFragment"
+            app:destination="@id/musicFragment" />
+        <action
+            android:id="@+id/action_gitFragment_to_authorFragment"
+            app:destination="@id/authorFragment" />
+        <action
+            android:id="@+id/action_gitFragment_to_infoProgFragment"
+            app:destination="@id/infoProgFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoProgFragment"
+        android:name="com.example.mpplayer.MainPages.InfoProgFragment"
+        android:label="fragment_info_prog"
+        tools:layout="@layout/fragment_info_prog" >
+        <action
+            android:id="@+id/action_infoProgFragment_to_authorFragment"
+            app:destination="@id/authorFragment" />
+        <action
+            android:id="@+id/action_infoProgFragment_to_musicFragment"
+            app:destination="@id/musicFragment" />
+        <action
+            android:id="@+id/action_infoProgFragment_to_instructionFragment"
+            app:destination="@id/instructionFragment" />
+        <action
+            android:id="@+id/action_infoProgFragment_to_gitFragment"
+            app:destination="@id/gitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/instructionFragment"
+        android:name="com.example.mpplayer.MainPages.InstructionFragment"
+        android:label="fragment_instruction"
+        tools:layout="@layout/fragment_instruction" >
+        <action
+            android:id="@+id/action_instructionFragment_to_musicFragment"
+            app:destination="@id/musicFragment" />
+        <action
+            android:id="@+id/action_instructionFragment_to_authorFragment"
+            app:destination="@id/authorFragment" />
+        <action
+            android:id="@+id/action_instructionFragment_to_infoProgFragment"
+            app:destination="@id/infoProgFragment" />
+        <action
+            android:id="@+id/action_instructionFragment_to_gitFragment"
+            app:destination="@id/gitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/musicFragment"
+        android:name="com.example.mpplayer.MainPages.MusicFragment"
+        android:label="fragment_music"
+        tools:layout="@layout/fragment_music" >
+        <action
+            android:id="@+id/action_musicFragment_to_authorFragment"
+            app:destination="@id/authorFragment" />
+        <action
+            android:id="@+id/action_musicFragment_to_instructionFragment"
+            app:destination="@id/instructionFragment" />
+        <action
+            android:id="@+id/action_musicFragment_to_gitFragment"
+            app:destination="@id/gitFragment" />
+        <action
+            android:id="@+id/action_musicFragment_to_infoProgFragment"
+            app:destination="@id/infoProgFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/authorFragment"
+        android:name="com.example.mpplayer.MainPages.AuthorFragment"
+        android:label="fragment_author"
+        tools:layout="@layout/fragment_author" >
+        <action
+            android:id="@+id/action_authorFragment_to_instructionFragment"
+            app:destination="@id/instructionFragment" />
+        <action
+            android:id="@+id/action_authorFragment_to_musicFragment"
+            app:destination="@id/musicFragment" />
+        <action
+            android:id="@+id/action_authorFragment_to_gitFragment"
+            app:destination="@id/gitFragment" />
+        <action
+            android:id="@+id/action_authorFragment_to_infoProgFragment"
+            app:destination="@id/infoProgFragment" />
+    </fragment>
+</navigation>
