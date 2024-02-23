@@ -1,14 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blackForBackground"
     tools:context=".MainPages.MusicFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <GridLayout
+        android:id="@+id/bottom_menu"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="80dp"
+        android:columnCount="6"
+        android:background="@color/blackForBottom"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-</FrameLayout>
+        <ImageView
+            android:id="@+id/main_menu_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/main_menu"
+            android:layout_gravity="center"
+            android:layout_columnWeight="1"/>
+
+        <ImageView
+            android:id="@+id/user_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/user"
+            android:layout_gravity="center"
+            android:layout_columnWeight="1"/>
+
+        <ImageView
+            android:id="@+id/about_prog_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/about_prog"
+            android:layout_gravity="center"
+            android:layout_columnWeight="1"/>
+
+        <ImageView
+            android:id="@+id/instruction_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/instruction"
+            android:layout_gravity="center"
+            android:layout_columnWeight="1"/>
+
+        <ImageView
+            android:id="@+id/git_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/git2"
+            android:layout_gravity="center"
+            android:layout_columnWeight="1"/>
+
+        <ImageView
+            android:id="@+id/exit_logo"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:src="@drawable/exit"
+            android:layout_gravity="center"
+            android:layout_columnWeight="1"/>
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
