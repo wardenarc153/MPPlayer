@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_main"
-    app:startDestination="@id/musicFragment">
+    app:startDestination="@id/songListFragment">
 
     <fragment
         android:id="@+id/gitFragment"
@@ -14,14 +14,14 @@
             android:id="@+id/action_gitFragment_to_instructionFragment"
             app:destination="@id/instructionFragment" />
         <action
-            android:id="@+id/action_gitFragment_to_musicFragment"
-            app:destination="@id/musicFragment" />
-        <action
             android:id="@+id/action_gitFragment_to_authorFragment"
             app:destination="@id/authorFragment" />
         <action
             android:id="@+id/action_gitFragment_to_infoProgFragment"
             app:destination="@id/infoProgFragment" />
+        <action
+            android:id="@+id/action_gitFragment_to_songListFragment"
+            app:destination="@id/songListFragment" />
     </fragment>
     <fragment
         android:id="@+id/infoProgFragment"
@@ -32,23 +32,20 @@
             android:id="@+id/action_infoProgFragment_to_authorFragment"
             app:destination="@id/authorFragment" />
         <action
-            android:id="@+id/action_infoProgFragment_to_musicFragment"
-            app:destination="@id/musicFragment" />
-        <action
             android:id="@+id/action_infoProgFragment_to_instructionFragment"
             app:destination="@id/instructionFragment" />
         <action
             android:id="@+id/action_infoProgFragment_to_gitFragment"
             app:destination="@id/gitFragment" />
+        <action
+            android:id="@+id/action_infoProgFragment_to_songListFragment"
+            app:destination="@id/songListFragment" />
     </fragment>
     <fragment
         android:id="@+id/instructionFragment"
         android:name="com.example.mpplayer.MainPages.InstructionFragment"
         android:label="fragment_instruction"
         tools:layout="@layout/fragment_instruction" >
-        <action
-            android:id="@+id/action_instructionFragment_to_musicFragment"
-            app:destination="@id/musicFragment" />
         <action
             android:id="@+id/action_instructionFragment_to_authorFragment"
             app:destination="@id/authorFragment" />
@@ -58,6 +55,9 @@
         <action
             android:id="@+id/action_instructionFragment_to_gitFragment"
             app:destination="@id/gitFragment" />
+        <action
+            android:id="@+id/action_instructionFragment_to_songListFragment"
+            app:destination="@id/songListFragment" />
     </fragment>
     <fragment
         android:id="@+id/musicFragment"
@@ -76,6 +76,9 @@
         <action
             android:id="@+id/action_musicFragment_to_infoProgFragment"
             app:destination="@id/infoProgFragment" />
+        <action
+            android:id="@+id/action_musicFragment_to_songListFragment"
+            app:destination="@id/songListFragment" />
     </fragment>
     <fragment
         android:id="@+id/authorFragment"
@@ -86,13 +89,82 @@
             android:id="@+id/action_authorFragment_to_instructionFragment"
             app:destination="@id/instructionFragment" />
         <action
-            android:id="@+id/action_authorFragment_to_musicFragment"
-            app:destination="@id/musicFragment" />
-        <action
             android:id="@+id/action_authorFragment_to_gitFragment"
             app:destination="@id/gitFragment" />
         <action
             android:id="@+id/action_authorFragment_to_infoProgFragment"
             app:destination="@id/infoProgFragment" />
+        <action
+            android:id="@+id/action_authorFragment_to_songListFragment"
+            app:destination="@id/songListFragment" />
+        <action
+            android:id="@+id/action_authorFragment_to_adminFragment"
+            app:destination="@id/adminFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/songListFragment"
+        android:name="com.example.mpplayer.MainPages.SongListFragment"
+        android:label="fragment_song_list"
+        tools:layout="@layout/fragment_song_list" >
+        <action
+            android:id="@+id/action_songListFragment_to_instructionFragment"
+            app:destination="@id/instructionFragment" />
+        <action
+            android:id="@+id/action_songListFragment_to_musicFragment"
+            app:destination="@id/musicFragment" />
+        <action
+            android:id="@+id/action_songListFragment_to_gitFragment"
+            app:destination="@id/gitFragment" />
+        <action
+            android:id="@+id/action_songListFragment_to_infoProgFragment"
+            app:destination="@id/infoProgFragment" />
+        <action
+            android:id="@+id/action_songListFragment_to_authorFragment"
+            app:destination="@id/authorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminFragment"
+        android:name="com.example.mpplayer.MainPages.Admin.AdminFragment"
+        android:label="fragment_admin"
+        tools:layout="@layout/fragment_admin" >
+        <action
+            android:id="@+id/action_adminFragment_to_authorFragment"
+            app:destination="@id/authorFragment" />
+        <action
+            android:id="@+id/action_adminFragment_to_instructionFragment"
+            app:destination="@id/instructionFragment" />
+        <action
+            android:id="@+id/action_adminFragment_to_infoProgFragment"
+            app:destination="@id/infoProgFragment" />
+        <action
+            android:id="@+id/action_adminFragment_to_gitFragment"
+            app:destination="@id/gitFragment" />
+        <action
+            android:id="@+id/action_adminFragment_to_songListFragment"
+            app:destination="@id/songListFragment" />
+        <action
+            android:id="@+id/action_adminFragment_to_addSongFragment"
+            app:destination="@id/addSongFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addSongFragment"
+        android:name="com.example.mpplayer.MainPages.Admin.AddSongFragment"
+        android:label="fragment_add_song"
+        tools:layout="@layout/fragment_add_song" >
+        <action
+            android:id="@+id/action_addSongFragment_to_songListFragment"
+            app:destination="@id/songListFragment" />
+        <action
+            android:id="@+id/action_addSongFragment_to_instructionFragment"
+            app:destination="@id/instructionFragment" />
+        <action
+            android:id="@+id/action_addSongFragment_to_authorFragment"
+            app:destination="@id/authorFragment" />
+        <action
+            android:id="@+id/action_addSongFragment_to_infoProgFragment"
+            app:destination="@id/infoProgFragment" />
+        <action
+            android:id="@+id/action_addSongFragment_to_gitFragment"
+            app:destination="@id/gitFragment" />
     </fragment>
 </navigation>

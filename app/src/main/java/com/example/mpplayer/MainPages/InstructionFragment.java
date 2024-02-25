@@ -35,7 +35,7 @@ public class InstructionFragment extends Fragment {
         ImageView git = (ImageView) view.findViewById(R.id.git_logo);
         ImageView exit = (ImageView) view.findViewById(R.id.exit_logo);
 
-        home.setOnClickListener(view1 -> navController.navigate(R.id.action_instructionFragment_to_musicFragment));
+        home.setOnClickListener(view1 -> navController.navigate(R.id.action_instructionFragment_to_songListFragment));
         author.setOnClickListener(view1 -> navController.navigate(R.id.action_instructionFragment_to_authorFragment));
         infoProg.setOnClickListener(view1 -> navController.navigate(R.id.action_instructionFragment_to_infoProgFragment));
         git.setOnClickListener(view1 -> navController.navigate(R.id.action_instructionFragment_to_gitFragment));

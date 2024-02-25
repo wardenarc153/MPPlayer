@@ -7,17 +7,6 @@
     android:background="@color/blackForBackground"
     tools:context=".MainPages.AuthorFragment">
 
-    <Button
-        android:id="@+id/adminButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        android:backgroundTint="@color/GrayForFilter"
-        app:layout_constraintBottom_toTopOf="@+id/email_author"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginRight="20dp"
-        android:textColor="@color/black"
-        android:text="admin"/>
 
     <TextView
         android:id="@+id/authorText1"
@@ -67,6 +56,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toTopOf="@id/bottom_menu" />
+
+    <Button
+        android:id="@+id/adminButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:backgroundTint="@color/GrayForFilter"
+        app:layout_constraintBottom_toTopOf="@+id/email_author"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/black"
+        android:text="admin"/>
 
     <GridLayout
         android:id="@+id/bottom_menu"

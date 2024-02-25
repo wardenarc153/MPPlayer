@@ -12,7 +12,6 @@ import com.example.mpplayer.MainPages.MainActivity;
 import com.example.mpplayer.R;
 
 public class InitialActivity extends AppCompatActivity implements AuthFragment.OnAuthorizationSuccessListener {
-
     private NavController navController;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -33,4 +32,5 @@ public class InitialActivity extends AppCompatActivity implements AuthFragment.O
         startActivity(intent);
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
     }
+
 }

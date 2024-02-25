@@ -40,7 +40,7 @@ public class GitFragment extends Fragment {
         ImageView exit = (ImageView) view.findViewById(R.id.exit_logo);
         WebView webView = view.findViewById(R.id.github);
 
-        home.setOnClickListener(view1 -> navController.navigate(R.id.action_gitFragment_to_musicFragment));
+        home.setOnClickListener(view1 -> navController.navigate(R.id.action_gitFragment_to_songListFragment));
         author.setOnClickListener(view1 -> navController.navigate(R.id.action_gitFragment_to_authorFragment));
         instruction.setOnClickListener(view1 -> navController.navigate(R.id.action_gitFragment_to_instructionFragment));
         infoProg.setOnClickListener(view1 -> navController.navigate(R.id.action_gitFragment_to_infoProgFragment));
