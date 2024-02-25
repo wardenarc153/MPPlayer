@@ -20,7 +20,7 @@ public class SongDatabaseHelper extends SQLiteOpenHelper {
     private static final String KEY_ID = "id";
     private static final String KEY_TITLE = "title";
     private static final String KEY_IMAGE_PATH = "image_path";
-    private static final String KEY_AUDIO_PATH = "audio_path";  // Добавлен новый столбец
+    private static final String KEY_AUDIO_PATH = "audio_path";
 
     public SongDatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);

@@ -39,7 +39,6 @@ public class SongAdapter extends ArrayAdapter<SongDataClass> {
 
         if (song != null) {
             songTitleTextView.setText(song.getTitle());
-            // Добавьте код для отображения изображения, если нужно
         }
 
         convertView.setOnClickListener(v -> onItemClickListener.onItemClick(position));

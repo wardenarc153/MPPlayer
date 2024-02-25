@@ -94,18 +94,17 @@ public class AddSongFragment extends Fragment {
             return;
         }
 
-        // Создайте экземпляр вашего SongDatabaseHelper (если у вас его нет)
         SongDatabaseHelper dbHelper = new SongDatabaseHelper(requireContext());
 
-        // Вызовите метод сохранения в базе данных
+        // Вызов метода сохранения в базе данных
         long result = dbHelper.saveSong(songName, selectedImageUri, selectedAudioUri);
 
-        // Закройте соединение с базой данных (если нужно)
+        // Закрытие соединения с базой данных
         dbHelper.close();
 
         if (result != -1) {
             Toast.makeText(requireContext(), "Песня успешно сохранена", Toast.LENGTH_SHORT).show();
-            // Здесь вы также можете вызвать метод сохранения данных песни в базе данных.
+            // Оповещания о результате сохранения
         } else {
             Toast.makeText(requireContext(), "Ошибка при сохранении песни", Toast.LENGTH_SHORT).show();
         }

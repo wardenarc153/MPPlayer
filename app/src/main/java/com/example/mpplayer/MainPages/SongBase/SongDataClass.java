@@ -10,7 +10,7 @@ public class SongDataClass implements Parcelable {
     private String title; // Название песни
     private Uri uri; // URI медиафайла
     private String imagePath; // Путь к изображению
-    private String audioPath;
+    private String audioPath; // Путь к песне
 
     public SongDataClass(){
 

@@ -25,7 +25,7 @@
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text=""
+        android:text="В данном разделе описан основной функционал программы"
         android:textColor="@color/goodWhite"
         android:textSize="18sp"
         android:layout_marginTop="20dp"
@@ -48,7 +48,8 @@
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:gravity="left"
-        android:text=""
+        android:text="Программа реализует логика MP3 плеера, который может проигрывать музыку на заднем фоне.
+Можно выбрать песню, переключать их, проматывать и загрузить свою."
         android:textColor="@color/goodWhite"
         android:textSize="16sp"
         android:layout_marginTop="20dp"

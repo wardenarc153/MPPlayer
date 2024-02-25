@@ -28,7 +28,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:gravity="left"
-            android:text="1."
+            android:text="1. Чтобы песни начали играть, нужно выбрать нужную в предоставленном списке на главной
+странице"
             android:textColor="@color/goodWhite"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -41,7 +42,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:gravity="left"
-            android:text="2. "
+            android:text="2. Чтобы переключить песню или проматать текущую нужно использовать соответсвенные кнопки
+и виджеты на экране"
             android:textColor="@color/goodWhite"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -54,7 +56,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             android:gravity="left"
-            android:text="3."
+            android:text="3. Чтобы добавить новую у вас должны быть админские права. Затем при переходе на нужный
+экран, вы можете сами выбрать название, песню и изображение для песни"
             android:textColor="@color/goodWhite"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
